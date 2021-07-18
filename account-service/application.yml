@@ -1,4 +1,15 @@
-logging:
-  level:
-    '[org.springframework.boot]': trace
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
 
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+info:
+  author: vasudeep
+  version: 2.0
